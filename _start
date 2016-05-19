@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+# Select files starting with a number followed by a dash
+files = Dir.glob("*")
+           .select { |f| f =~ /\A\d-/ }
+           .join(" ")
+
+# Load each file in a tab with the custom settings
+system "vim -u _settings.vim -p #{files}"

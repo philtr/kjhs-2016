@@ -1,7 +1,7 @@
 
 class Developer < Person
   def required_education
-    case job_title
+    case job_title # depends on what you want to do
 
     when :data_analyst
       "Degree in Math/Statistics"

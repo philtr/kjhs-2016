@@ -10,11 +10,12 @@ class Developer < Person
   end
 
   def ballpark_salary
-    if years_experience < 10
+    salary = if years_experience < 10
       base_salary + (years_experience * 10_000)
     else
       base_salary + 100_000
     end
+    (salary-15_000)..(salary+15_000)
   end
 end
 

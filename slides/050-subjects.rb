@@ -10,7 +10,7 @@ class Developer < Person
   end
 end
 
-Developer.new.subjects_to_study.to_sentence
+puts Developer.new.subjects_to_study.to_sentence
 
 
 

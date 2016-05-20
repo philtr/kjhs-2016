@@ -1,8 +1,7 @@
 
 
-
-
 # You might be a good fit for this career if:
+
 
 * You enjoy solving  math and  word problems
 
@@ -14,6 +13,10 @@
 
 * You’re already learning a programming language
   ( JavaScript,  Ruby,  Python,  Java, etc.)
+
+
+
+
 
 
 

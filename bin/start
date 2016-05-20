@@ -3,7 +3,11 @@
 # Select files starting with a number followed by a dash
 files = Dir.glob("slides/*")
            .select { |f| f =~ /\Aslides\/\d+-/ }
-           .join(" ")
+
 
 # Load each file in a tab with the custom settings
-system "vim -u _settings.vim -p #{files}"
+rc     = %(-u config/presenter.vim)
+config = %(--cmd "set tabpagemax=999")
+tabs   = %(-p #{files.join(" ")})
+
+system("vim #{rc} #{config} #{tabs}")

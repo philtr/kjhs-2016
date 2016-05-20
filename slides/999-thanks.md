@@ -2,4 +2,4 @@
 
 # Thanks!
 
-Resources: <http://j.mp/kjhs-2016>
+Links: <http://j.mp/kjhs-2016>

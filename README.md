@@ -2,4 +2,4 @@
 
 ## Helpful links:
 
-- CodeCademy - <https://www.codecademy.com>
+<https://phillipridlen.com/resources/kjhs/2016>

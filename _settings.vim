@@ -95,6 +95,9 @@ nmap <Leader>p <C-p>
 nmap <Leader>P :CtrlPClearAllCaches<CR><C-p>
 nmap <Leader>b :CtrlPBuffer<CR>
 
+nmap <F2> :set background=light<CR>:hi! link FoldColumn Normal<CR>:set foldcolumn=3<CR>:<CR>
+nmap <F1> :set background=dark<CR>:hi! link FoldColumn Normal<CR>:set foldcolumn=3<CR>:<CR>
+
 " Theme -------------------------------------------------------------------------------------------
 
 set background=dark

@@ -106,10 +106,6 @@ nmap <F9> :!bundle exec pry -r ./config/presenter -r ./%<CR>
 set background=dark
 colorscheme base16-default
 
-set hlsearch                            " highlight all search matches
-set colorcolumn=80,100,120              " visual indicator at columns 80, 100, 120
-
-set list listchars=tab:██,trail:∙       " Use "██" for tabs and "∙" for trailing spaces
 set fillchars+=vert:                    " set vertical fillchar to "en space" (it's there, trust
 
 " highlight the foldcolumn with normal colors
@@ -118,29 +114,7 @@ set foldcolumn=3
 
 " File Types --------------------------------------------------------------------------------------
 
-au BufRead,BufNewFile *.brs setf vb           " Use VBScript for BrightScript files
 au BufRead,BufNewFile *.md  setf markdown     " Use Markdown for .md files
-au BufRead,BufNewFile *.jbuilder setf ruby    " Use Ruby for .jbuilder files
-
-" CtrlP -------------------------------------------------------------------------------------------
-
-let g:ctrlp_use_caching = 1           " Use caching
-let g:ctrlp_clear_cache_on_exit = 0   " Persist cache across sessions
-let g:ctrlp_show_hidden = 1           " Show hidden files
-
-" Ignore specific files and folders
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '(log|vendor/bundle|tmp|components/\.*/(vendor/bundle|tmp|spec/dummy|log))',
-  \ 'file': '\v\.(jpg|png|gif|db)'
-  \ }
-
-" Ignore files in `.gitignore`
-let g:ctrlp_user_command = {
-  \ 'types': {
-    \ 1: ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'],
-    \ },
-  \ 'fallback': 'find %s -type f'
-  \ }
 
 "- Markdown ---------------------------------------------------------------------------------------
 
@@ -151,3 +125,4 @@ let g:markdown_fenced_languages = [
   \ 'ruby',
   \'sass'
 \]
+

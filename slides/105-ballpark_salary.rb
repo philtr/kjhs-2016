@@ -2,7 +2,7 @@
 class Developer < Person
   # Depends on your experience
   attr_accessor :years_experience
-  # Dependss on where you live
+  # Depends on where you live
   attr_accessor :cost_of_living_adj
 
   def base_salary

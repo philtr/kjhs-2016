@@ -17,4 +17,5 @@ Phillip.birthday  = (30.years + 241.days).ago.to_date
 Phillip.employer  = "Oven Bits <http://ovenbits.com>"
 Phillip.job_title = :web_developer
 
+# (Interpreted Language)
 
